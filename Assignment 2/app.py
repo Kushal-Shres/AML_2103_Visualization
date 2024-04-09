@@ -69,7 +69,7 @@ def submit():
 
     input_data = scaler.transform(np.array([list((input_data.values()))]))
     y_pred_prob = model.predict(input_data)
-    y_pred = (y_pred_prob > 0.6).astype(int)
+    y_pred = (y_pred_prob > 0.7).astype(int)
 
     output_data = []
     output_data.append(list(y_pred_prob[0]))
