@@ -75,7 +75,7 @@ def submit():
     output_data.append(list(y_pred_prob[0]))
     output_data.append(list(y_pred[0]))
     data = {
-        'probability': str(output_data[0][0]),
+       'probability': str(output_data[0][0]),
         'result': str(output_data[1][0])
     }
     return jsonify(data)
